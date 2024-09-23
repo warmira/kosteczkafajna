@@ -31,6 +31,13 @@
             }
             RollLabel.Text = "Wynik rzutu: " + diceRoll.ToString();
         }
+        private void CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            int maxRoll = int.Parse((string)rb.Value);
+            string fileName = "k" + maxRoll + ".jpg";
+            DiceImage.Source = fileName;
+            RollLabel.Text = String.Empty;
+        }
     }
-
 }

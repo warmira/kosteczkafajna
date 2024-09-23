@@ -8,7 +8,8 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
+                x:Name="DiceImage"
+                Source="k6.jpg"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
@@ -16,20 +17,24 @@
             <RadioButton
               x:Name="K4"
                 Content="Rzut K4"
-              Value="4"/>
+                Value="4"
+                CheckedChanged="CheckedChanged"/>
             <RadioButton
                 x:Name="K6"
                 Content="Rzut K6"
                 Value="6"
-                IsChecked="True"/>
+                IsChecked="True"
+                CheckedChanged="CheckedChanged"/>
             <RadioButton
                   x:Name="K10"
                   Content="Rzut K10"
-                  Value="10"/>
+                  Value="10"
+                  CheckedChanged="CheckedChanged"/>
             <RadioButton
                 x:Name="K12"
                 Content="Rzut K12"
-                Value="12"/>
+                Value="12"
+                CheckedChanged="CheckedChanged"/>
 
             <Button
                 x:Name="CounterBtn"
